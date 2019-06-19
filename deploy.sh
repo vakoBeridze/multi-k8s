@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-docker build -t vakob/multi-client:latest -t vakob/multi-client:$SHA vako -f ./client/Dockerfile ./client
+docker build -t vakob/multi-client:latest -t vakob/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t vakob/multi-server:latest -t vakob/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t vakob/multi-worker:latest -t vakob/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
